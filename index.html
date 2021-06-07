@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <!-- <script src="./base.js"></script> -->
+
+
+    <!-- Slick Carousal CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" />
+        <link rel="stylesheet" href="./style.css">
+
+    <title>IPL Teams</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="nav-bar">
+        <div id="left-nav-bar">
+            <div ><img class="logo" src ="https://media-eng.dhakatribune.com/uploads/2020/08/ipllogo-1596448223-1596547234612.jpg">
+            </div>
+            <p><a id="cloth-menu" href="./index.html">HOME</a></p>
+            <p><a id="cloth-menu" href="./team.html">TEAMS</a></p>
+            <p><a id="acces-menu" href="./players.html">INFO</a></p>
+        </div>
+        <input type="text" value="" id='search-box' placeholder="Search for Teams">
+        <div id="right-nav-bar">
+            <div>
+                <button id="btn-players" class="neon-button clickers">create player</button>
+                <button id="btn-teams" class="neon-button clickers">create team</button>
+            </div>
+        </div>
+    </div>
+
+    </header>
+    <aside id="aside-1">
+        <i class="fas fa-times close neon-button"></i>
+        <form id="form-1">
+        <label>Name Of Player : </label><br/>
+        <input type="text" name="search" placeholder="player name" value=""
+         class="player-fields"/><br/>
+         <label>Image Link : </label><br/>
+        <input type="text" name="search1" placeholder="link" value=""
+         class="player-fields"/><br/>
+         <label>Player Description : </label><br/>
+        <input type="text" name="search2" placeholder="description" value=""
+         class="player-fields"/><br/>
+         <label>Team : </label><br/>
+        <input type="text" name="search3" placeholder="team" value=""
+         class="player-fields"/><br/>
+         <label>Role : </label><br/>
+        <input type="text" name="search4" placeholder="role" value=""
+         class="player-fields"/><br/>
+         <label>Playing Status : </label><br/>
+        <input type="text" name="search5" placeholder="status" value=""
+         class="player-fields"/><br/>
+         <label>Price : </label><br/>
+        <input type="text" name="search6" placeholder="price is Rs." value=""
+         class="player-fields"/><br/><br/>
+         <input type="submit" name="submit" class="submit-btn"><br/>
+        </form>
+    </aside>
+    <aside id="aside-2">
+        <i class="fas fa-times close neon-button"></i>
+        <form id="form-2">
+        <label>Team Name : </label><br/>
+        <input type="text" name="search" placeholder="team name" value=""
+         class="player-fields"/><br/>
+         <label>key Name: </label><br/>
+        <input type="text" name="search" placeholder="key" value=""
+         class="player-fields"/><br/>
+         <label>Championships Won : </label>
+        <input type="text" name="search" placeholder="championship number" value=""
+         class="player-fields"/><br/>
+         <label>Team Logo : </label><br/>
+        <input type="text" name="search" placeholder="link of logo" value=""
+         class="player-fields"/><br/><br/>
+         <input type="submit" name="submit" class="submit-btn"><br/>
+         </form>
+    </aside>
+   
+    <h3 id="h1">teams</h3>
+    <div class="access" id="teams-1">
+    </div>
+  
+    <footer>
+        <div>
+            <h4>online store</h4>
+            <a class="links" href="/">player profile</a>
+            <a class="links" href="/">team profile</a>
+            <a class="links" href="/">player cost</a>
+            <a class="links" href="/">team value</a>
+        </div>
+        <div>
+            <h4>helpful links</h4>
+            <a class="links" href="./index.html">home</a>
+            <a class="links" href="/">about</a>
+            <a class="links" href="/">contact</a>
+        </div>
+        <div>
+            <h4>partners</h4>
+            <a class="links" href="/">Rajasthan Royals</a>
+            <a class="links" href="/">Mumbai Indians</a>
+            <a class="links" href="/">Kolkata Knight Riders</a>
+            <a class="links" href="/">Delhi Capitals</a>
+            <a class="links" href="/">+ many more</a>
+        </div>
+        <div>
+            <h4>address</h4>
+            <p class="text">building 101</p>
+            <p class="text">central avenue</p>
+            <p class="text">la - 902722</p>
+            <p class="text">united states</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+</body>
+
+</html>
